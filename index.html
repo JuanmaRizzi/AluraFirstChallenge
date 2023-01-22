@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Quicksand:wght@300&display=swap"
+        rel="stylesheet">
+
+    <title>Encriptador</title>
+</head>
+
+<body>
+    <section class="container-principal">
+        
+        <div class="container-logo"> <img src="/img-copia/Logo.png" alt="logo" id="#img-logo"></div>
+        <div class="container-aviso">
+            <img class="vector-aviso" src="/img-copia/Vector.png" alt="signo de admiracion">
+            <p id="texto-aviso">Solo letras minusculas y sin acentos</p>
+        </div>
+        <!-- <div class="container-ingrese-texto"> </div> -->
+        <textarea name="texto-a-encriptar" placeholder="ingrese texto" class="container-ingrese-texto" rows="100"
+            cols="500" id="container-ingrese-texto" style="width: 680px; height: 288px"></textarea>
+        <div class="container-botones">
+            <button class="boton-encriptar" onclick="getValueInput()">
+                <p class="txt-btn-encr">Encriptar</p>
+            </button>
+            <button class="boton-desencriptar" onclick="desencriptar()">
+                <p class="txt-btn-des">Desencriptar</p>
+            </button>
+
+        </div>
+
+    </section>
+    <section class="container-texto-encriptado" id="container-texto-encriptado">
+
+
+        <div class="container-mensaje">
+            
+                <h2 id="preaviso"> Ningún mensaje fue encontrado</h2>
+                <h5 class="texto-a-encriptar" id="texto-cifrado">"Ingresa el texto que desees encriptar o desencriptar."
+                </h5>
+
+                
+                    <p class="texto-encriptado" id="texto-encriptado"></p>
+                
+            
+
+
+           
+            <button id="btn-copiar" onclick="copiar()"> <p class="txt-btn-copiar">copiar</p> </button>
+
+           
+
+        </div>
+
+
+    </section>
+
+
+
+    </section>
+    <script src="/index.js"></script>
+
+</body>
+
+</html>
